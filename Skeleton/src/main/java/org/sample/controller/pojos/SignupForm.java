@@ -1,7 +1,18 @@
 package org.sample.controller.pojos;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
+
+import org.sample.controller.service.SampleService;
+import org.sample.controller.service.SampleServiceImpl;
+import org.sample.model.Team;
+import org.sample.model.dao.*;
 
 public class SignupForm {
 
@@ -9,7 +20,7 @@ public class SignupForm {
     private Long id;
     private String firstName;
     private String lastName;
-
+    private String teamName;
 
     @NotNull
     @Pattern(regexp = "[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?", 
@@ -19,7 +30,15 @@ public class SignupForm {
     public String getFirstName() {
         return firstName;
     }
+    public String getTeamName() {
+        return teamName;
+    }
 
+
+    
+	public void setTeamName(String teamName){
+		this.teamName = teamName;
+	}
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
@@ -47,4 +66,5 @@ public class SignupForm {
     public void setId(Long id) {
         this.id = id;
     }
+
 }

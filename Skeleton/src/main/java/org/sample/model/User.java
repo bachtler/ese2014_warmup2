@@ -4,7 +4,11 @@ import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
+
+import org.sample.model.dao.TeamDao;
+import org.springframework.beans.factory.annotation.Autowired;
 
 
 @Entity
@@ -18,9 +22,22 @@ public class User {
     private String lastName;
     private String email;
     
+
+    
+
+    private String team;
+    
     @OneToOne(cascade = {CascadeType.ALL})
     private Address address; 
     
+    
+    public String getTeam(){
+    	return team;
+    }
+    public void setTeam(String team){
+    	
+    	this.team = team;
+    }
     public Long getId() {
         return id;
     }

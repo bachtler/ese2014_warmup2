@@ -39,14 +39,15 @@
                 <form:errors path="lastName" cssClass="help-inline" element="span"/>
             </div>
         </div>
+        
+       
         <div class="form-actions">
             <button type="submit" class="btn btn-primary">Sign up</button>
             <button type="button" class="btn">Cancel</button>
         </div>
+         <form:radiobuttons  path="teamName" items="${teamList}" />
     </fieldset>
 </form:form>
-
-
 
 
 	<c:if test="${page_error != null }">
