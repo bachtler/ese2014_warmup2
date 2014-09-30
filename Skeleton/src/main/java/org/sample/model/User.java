@@ -4,11 +4,7 @@ import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
-
-import org.sample.model.dao.TeamDao;
-import org.springframework.beans.factory.annotation.Autowired;
 
 
 @Entity

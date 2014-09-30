@@ -1,17 +1,12 @@
 package org.sample.controller;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-
 import javax.validation.Valid;
 
 import org.sample.controller.exceptions.InvalidUserException;
 import org.sample.controller.pojos.SignupForm;
-import org.sample.controller.pojos.TeamList;
 import org.sample.controller.service.SampleService;
-import org.sample.controller.service.SampleServiceImpl;
 import org.sample.model.Team;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

@@ -5,8 +5,6 @@ import java.util.List;
 
 import org.sample.controller.exceptions.InvalidUserException;
 import org.sample.model.User;
-import org.sample.model.dao.AddressDao;
-import org.sample.model.dao.TeamDao;
 import org.sample.model.dao.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,7 +1,5 @@
 package org.sample.model.dao;
 
-import java.util.List;
-
 import org.sample.model.Team;
 import org.springframework.data.repository.CrudRepository;
 
